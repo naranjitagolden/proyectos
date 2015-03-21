@@ -1,2 +1,9 @@
+<h1>Proyectos</h1>
 
+<% @proyectos.each do |proyecto| %>
+<p><%= proyecto.name %></p>
 
+<% proyecto.tasks.each do |task| %>
+<p><%= task.name %></p>
+<% end %>
+<% end %>
